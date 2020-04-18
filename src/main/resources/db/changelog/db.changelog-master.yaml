@@ -1,0 +1,234 @@
+databaseChangeLog:
+  - changeSet:
+      id: data_universe
+      author: Ramasamy Kasiviswanathan
+      dbms: all
+      runOnChange: true
+      changes:
+        - createTable:  #https://www.liquibase.org/documentation/changes/create_table.html
+            columns:  #https://www.liquibase.org/documentation/column.html
+              - column:
+                  name: universe_id
+                  type: int
+                  constraints:
+                    primaryKey: true
+              - column:
+                  name: insert_dt
+                  type: date
+            tableName: data_universe
+        - createIndex:
+            clustered: true
+            columns:
+              - column:
+                  name: universe_id
+              - column:
+                  name: insert_dt
+            indexName: uniqueIndexes
+            tableName: data_universe
+            unique: true
+  - changeSet:
+      id: data_universe_insert
+      author: Ramasamy Kasiviswanathan
+      dbms: all
+      runOnChange: true
+      changes:
+        - insert:
+            columns:
+              - column:
+                  name: universe_id
+                  value: 1
+              - column:
+                  name: insert_dt
+                  valueDate: "2020-04-07"
+            tableName: data_universe
+            schemaName: public
+        - insert:
+            columns:
+              - column:
+                  name: universe_id
+                  value: 2
+              - column:
+                  name: insert_dt
+                  valueDate: "2020-04-06"
+            tableName: data_universe
+            schemaName: public
+        - insert:
+            columns:
+              - column:
+                  name: universe_id
+                  value: 3
+              - column:
+                  name: insert_dt
+                  valueDate: "2020-04-05"
+            tableName: data_universe
+            schemaName: public
+        - insert:
+            columns:
+              - column:
+                  name: universe_id
+                  value: 4
+              - column:
+                  name: insert_dt
+                  valueDate: "2020-04-04"
+            tableName: data_universe
+            schemaName: public
+        - insert:
+            columns:
+              - column:
+                  name: universe_id
+                  value: 5
+              - column:
+                  name: insert_dt
+                  valueDate: "2020-04-03"
+            tableName: data_universe
+            schemaName: public
+        - insert:
+            columns:
+              - column:
+                  name: universe_id
+                  value: 6
+              - column:
+                  name: insert_dt
+                  valueDate: "2020-04-02"
+            tableName: data_universe
+            schemaName: public
+        - insert:
+            columns:
+              - column:
+                  name: universe_id
+                  value: 7
+              - column:
+                  name: insert_dt
+                  valueDate: "2020-04-01"
+            tableName: data_universe
+            schemaName: public
+        - insert:
+            columns:
+              - column:
+                  name: universe_id
+                  value: 8
+              - column:
+                  name: insert_dt
+                  valueDate: "2020-03-31"
+            tableName: data_universe
+            schemaName: public
+        - insert:
+            columns:
+              - column:
+                  name: universe_id
+                  value: 9
+              - column:
+                  name: insert_dt
+                  valueDate: "2020-03-30"
+            tableName: data_universe
+            schemaName: public
+        - insert:
+            columns:
+              - column:
+                  name: universe_id
+                  value: 10
+              - column:
+                  name: insert_dt
+                  valueDate: "2020-03-29"
+            tableName: data_universe
+            schemaName: public
+        - insert:
+            columns:
+              - column:
+                  name: universe_id
+                  value: 11
+              - column:
+                  name: insert_dt
+                  valueDate: "2020-03-28"
+            tableName: data_universe
+            schemaName: public
+        - insert:
+            columns:
+              - column:
+                  name: universe_id
+                  value: 12
+              - column:
+                  name: insert_dt
+                  valueDate: "2020-03-27"
+            tableName: data_universe
+            schemaName: public
+        - insert:
+            columns:
+              - column:
+                  name: universe_id
+                  value: 13
+              - column:
+                  name: insert_dt
+                  valueDate: "2020-03-26"
+            tableName: data_universe
+            schemaName: public
+        - insert:
+            columns:
+              - column:
+                  name: universe_id
+                  value: 14
+              - column:
+                  name: insert_dt
+                  valueDate: "2020-03-25"
+            tableName: data_universe
+            schemaName: public
+        - insert:
+            columns:
+              - column:
+                  name: universe_id
+                  value: 15
+              - column:
+                  name: insert_dt
+                  valueDate: "2020-03-24"
+            tableName: data_universe
+            schemaName: public
+        - insert:
+            columns:
+              - column:
+                  name: universe_id
+                  value: 16
+              - column:
+                  name: insert_dt
+                  valueDate: "2020-03-23"
+            tableName: data_universe
+            schemaName: public
+        - insert:
+            columns:
+              - column:
+                  name: universe_id
+                  value: 17
+              - column:
+                  name: insert_dt
+                  valueDate: "2020-03-22"
+            tableName: data_universe
+            schemaName: public
+        - insert:
+            columns:
+              - column:
+                  name: universe_id
+                  value: 18
+              - column:
+                  name: insert_dt
+                  valueDate: "2020-03-21"
+            tableName: data_universe
+            schemaName: public
+        - insert:
+            columns:
+              - column:
+                  name: universe_id
+                  value: 19
+              - column:
+                  name: insert_dt
+                  valueDate: "2020-03-20"
+            tableName: data_universe
+            schemaName: public
+        - insert:
+            columns:
+              - column:
+                  name: universe_id
+                  value: 20
+              - column:
+                  name: insert_dt
+                  valueDate: "2020-03-19"
+            tableName: data_universe
+            schemaName: public
