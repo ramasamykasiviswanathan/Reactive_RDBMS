@@ -20,7 +20,7 @@ public class Handler {
     {
         this.dao = dao;
     }
-    private final List<MediaType> acceptedMediaTypes = List.of(MediaType.APPLICATION_JSON, MediaType.APPLICATION_STREAM_JSON, MediaType.TEXT_EVENT_STREAM, MediaType.APPLICATION_STREAM_JSON);
+    private final List<MediaType> acceptedMediaTypes = List.of(MediaType.APPLICATION_JSON, MediaType.TEXT_EVENT_STREAM, MediaType.APPLICATION_STREAM_JSON);
 
     public Mono<ServerResponse> getAllId(ServerRequest serverRequest) {
         return ServerResponse.ok()

@@ -16,7 +16,6 @@ public class Router {
         this.handler = handler;
     }
 
-
     @Bean
     public RouterFunction<ServerResponse> routes(){
         return RouterFunctions.route()
@@ -24,18 +23,3 @@ public class Router {
                 .build();
     }
 }
-
-
-
-/**
- * let sse = new EventSource('//localhost:8080/getAllID',{withxCredentials:false});
- * let isObtained = false;
- * sse.onopen= e=>{
- *     if(isObtained){
- *         sse.close();
- *     }
- *     isObtained = true;
- * };
- *  sse.onmessage= e=>console.log('message ',e.data);
- *
- **/
